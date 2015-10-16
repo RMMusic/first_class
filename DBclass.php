@@ -5,7 +5,7 @@
  * Date: 15.10.2015
  * Time: 19:37
  */
-class First
+class DBConnect
 {
     protected $_base = '1';
     protected $_mySqlConnect;
@@ -52,7 +52,7 @@ class First
     }
 }
 
-$a = new First(2);
+$a = new DBConnect(2);
 //var_dump($a->sqlQuerySelect());
 //var_dump($a->sqlQuerySelect());
 //var_dump($a->sqlQuerySelect());
@@ -62,4 +62,3 @@ unset($a);
 //echo $a->getBase();
 //$a->setBase("yo");
 //echo $a->getBase();
-

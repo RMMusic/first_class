@@ -5,22 +5,12 @@
  * Date: 15.10.2015
  * Time: 19:37
  */
-class DBConnect
+class test
 {
     protected $_base = '1';
-    protected $_mySqlConnect;
-    protected $_host = 'localhost';
-    protected $_user = 'root';
-    protected $_pas = '';
-    protected $_dbName = 'progectFormdb';
 
     public function __construct($base){
         $this->_base = $base;
-        $this->_sqlConnect();
-    }
-
-    public function __destruct(){
-        $this->_mySqlClose();
     }
 
     public function setBase($outSetBase){
@@ -29,6 +19,22 @@ class DBConnect
 
     public function getBase(){
         return $this->_base;
+    }
+}
+class DBConnect
+{
+    protected $_mySqlConnect;
+    protected $_host = 'localhost';
+    protected $_user = 'root';
+    protected $_pas = '';
+    protected $_dbName = 'progectFormdb';
+
+    public function __construct(){
+        $this->_sqlConnect();
+    }
+
+    public function __destruct(){
+        $this->_mySqlClose();
     }
 
     protected function _sqlConnect(){
@@ -39,26 +45,29 @@ class DBConnect
         mysqli_close($this->_mySqlConnect);
         $this->_mySqlConnect = null;
     }
+}
 
+class DBquery extends DBConnect
+{
     public function sqlQueryInsert($sqlQuery){
         $result = mysqli_query($this->_mySqlConnect, $sqlQuery);
         return $result;
     }
 
     public function sqlQuerySelect(){
-        $result = mysqli_query($this->_mySqlConnect, 'SELECT * FROM names');
+        $result = mysqli_query($this->_mySqlConnect, 'SELECT * FROM names WHERE id=1');
         $data =  mysqli_fetch_all($result, MYSQLI_ASSOC);
         return $data;
     }
 }
 
-$a = new DBConnect(2);
-//var_dump($a->sqlQuerySelect());
-//var_dump($a->sqlQuerySelect());
-//var_dump($a->sqlQuerySelect());
-echo $a->getBase();
+$a = new DBConnect();
+$b = new DBquery();
+$c = new Test(2);
+var_dump($b->sqlQuerySelect());
+echo $c->getBase();
 unset($a);
-//var_dump($b);
+unset($b);
 //echo $a->getBase();
 //$a->setBase("yo");
 //echo $a->getBase();

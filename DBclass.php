@@ -70,4 +70,4 @@ unset($a);
 unset($b);
 //echo $a->getBase();
 //$a->setBase("yo");
-//echo $a->getBase(111);
+//echo $a->getBase();

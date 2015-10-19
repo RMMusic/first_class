@@ -21,7 +21,8 @@ class test
         return $this->_base;
     }
 }
-class DBConnect
+
+abstract class DBConnect
 {
     protected $_mySqlConnect;
     protected $_host = 'localhost';
@@ -45,32 +46,69 @@ class DBConnect
         mysqli_close($this->_mySqlConnect);
         $this->_mySqlConnect = null;
     }
+
+    abstract public function sqlQueryInsert($sqlQuery);
+
+    abstract public function sqlQuerySelect();
+
 }
 
 class DBquery extends DBConnect
 {
-    public function sqlQueryInsert($sqlQuery){
+
+    public function __construct(){
+        parent :: __construct();
+        echo 'yo<br>';
+    }
+
+    public function sqlQueryInsert($sqlQuery)
+    {
         $result = mysqli_query($this->_mySqlConnect, $sqlQuery);
         return $result;
     }
 
     public function sqlQuerySelect(){
-        $result = mysqli_query($this->_mySqlConnect, 'SELECT * FROM names WHERE id=1');
+        $result = mysqli_query($this->_mySqlConnect, 'SELECT name FROM names WHERE id=1');
         $data =  mysqli_fetch_all($result, MYSQLI_ASSOC);
         return $data;
     }
 }
 
-$a = new DBConnect();
+function algoritm(DBConnect $a){
+    var_dump($a->sqlQuerySelect());
+}
+
+interface Buljka
+{
+    public function numberOne();
+
+    public function NumberTwo();
+}
+
+interface Mulo extends  Buljka
+{
+    public function NumberFour();
+}
+
+class Inter implements Mulo
+{
+    public function numberOne(){
+
+    }
+
+    public function NumberTwo(){
+
+    }
+
+    public function NumberFour(){
+
+    }
+}
+
 $b = new DBquery();
 $c = new Test(2);
-var_dump($b->sqlQuerySelect());
-echo $c->getBase();
-unset($a);
+algoritm($b);
 unset($b);
 //echo $a->getBase();
 //$a->setBase("yo");
 //echo $a->getBase();
-
-
-1;

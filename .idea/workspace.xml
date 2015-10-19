@@ -48,11 +48,11 @@
       <file leaf-file-name="DBclass.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DBclass.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4687915">
-              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.25764894">
+              <caret line="88" column="1" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="false" />
-                <marker date="1445267851618" expanded="true" signature="1233:1263" placeholder="SELECT * FRO..names..." />
+                <marker date="1445275402510" expanded="true" signature="1453:1486" placeholder="SELECT name ..names..." />
               </folding>
             </state>
           </provider>
@@ -85,10 +85,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
-    <option name="y" value="-8" />
-    <option name="width" value="1394" />
-    <option name="height" value="916" />
+    <option name="x" value="1432" />
+    <option name="y" value="120" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -134,7 +134,7 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Club_tasks/PHP/1" />
     <property name="FullScreen" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="recentsLimit" value="5" />
@@ -190,11 +190,17 @@
       <option name="project" value="LOCAL" />
       <updated>1445267820194</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="phpstorm git connect test53454">
+      <created>1445269210261</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1445269210261</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1394" height="916" extended-state="6" />
+    <frame x="1432" y="120" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10522497" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -245,7 +251,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="false" />
-            <marker date="1445267851618" expanded="true" signature="1233:1263" placeholder="SELECT * FRO..names..." />
+            <marker date="1445275402510" expanded="true" signature="1453:1486" placeholder="SELECT name ..names..." />
           </folding>
         </state>
       </provider>
@@ -256,18 +262,29 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="false" />
-            <marker date="1445267851618" expanded="true" signature="1233:1263" placeholder="SELECT * FRO..names..." />
+            <marker date="1445275402510" expanded="true" signature="1453:1486" placeholder="SELECT name ..names..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DBclass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4687915">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="false" />
-            <marker date="1445267851618" expanded="true" signature="1233:1263" placeholder="SELECT * FRO..names..." />
+            <marker date="1445275402510" expanded="true" signature="1453:1486" placeholder="SELECT name ..names..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DBclass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25764894">
+          <caret line="88" column="1" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="false" />
+            <marker date="1445275402510" expanded="true" signature="1453:1486" placeholder="SELECT name ..names..." />
           </folding>
         </state>
       </provider>
